@@ -43,7 +43,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: solid 1px;
+  border-top: solid 1px;
 }
 .img1 {
   width: 15%;
