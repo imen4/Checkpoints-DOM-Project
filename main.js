@@ -12,7 +12,7 @@ let buttonsMinus=Array.from(document.getElementsByClassName('fa-minus'))
 for(let minus of buttonsMinus){
     minus.addEventListener('click',function(){
         minus.previousElementSibling.innerHTML--
-        moins()
+        sum()
     })
 }
 function sum(){
@@ -24,15 +24,6 @@ function sum(){
     }
     //console.log(s)
     document.getElementById('totalPrice').innerHTML="Shopping Cart Total: $"+s
-}
-function moins(){
-    let qte = document.querySelectorAll(".qte")
-    let price = document.querySelectorAll(".price") 
-    let m = 0;
-    for(let i=0; i<qte.length; i++){
-        m = (qte[i].innerHTML*price[i].innerHTML) - m
-    }
-    document.getElementById('totalPrice').innerHTML="Shopping Cart Total: $"+ m
 }
 
 let buttonsDelete = document.getElementsByClassName('fa-trash')
